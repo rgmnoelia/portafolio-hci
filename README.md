@@ -1,4 +1,4 @@
-# [Nombre del producto]
+# Ubika
 
 Portafolio del proyecto de Interacción Hombre-Máquina — entrega parcial.
 
