@@ -17,8 +17,8 @@ Portafolio del proyecto de Interacción Hombre-Máquina — entrega parcial.
 
 - `index.html`: portafolio (secciones 1 a 6 y plan de la prueba de usabilidad).
 - `css/estilos.css`: estilos del sitio.
-- `img/`: capturas, fotos de bocetos y diagramas usados como evidencia.
-- `anexos/`: materiales de trabajo (entrega 1, guía de entrevista, encuesta).
+- `img/`: capturas y fotos usadas como evidencia, organizadas en `crazy8/`, `papel/`, `wireframes/` y `alta_fidelidad/`.
+- `anexos/`: materiales de trabajo (entrega 1, guía de entrevista, encuesta, ZIP originales de wireframes y alta fidelidad).
 - `demo/`: demo funcional (entrega final).
 
 ## Publicación

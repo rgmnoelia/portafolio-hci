@@ -40,9 +40,9 @@
           <div><dt>Rol</dt><dd>Investigación, definición, ideación y prototipado</dd></div>
           <div><dt>Fecha</dt><dd>26 de noviembre de 2026</dd></div>
         </dl>
-        <figure class="figura-placeholder">
-          <div class="placeholder">A completar: captura de la versión de alta fidelidad.</div>
-          <figcaption>Fig: vista principal del producto.</figcaption>
+        <figure>
+          <img src="img/alta_fidelidad/alta_01_inicio.png" alt="Pantalla de Inicio del prototipo de alta fidelidad, con recomendaciones de lugares y categorías.">
+          <figcaption>Fig: pantalla de Inicio del prototipo de alta fidelidad.</figcaption>
         </figure>
       </div>
     </section>
@@ -195,15 +195,54 @@
       <div class="contenedor">
         <p class="etiqueta">3 · Idear</p>
         <h2>Ideación</h2>
-        <p class="intro">A completar con las imágenes de la lluvia de ideas y los Crazy 8s, las alternativas consideradas y el criterio por el que elegimos la que desarrollamos.</p>
-        <div class="rejilla">
-          <figure class="figura-placeholder"><div class="placeholder">A completar: foto de la lluvia de ideas.</div><figcaption>Fig: lluvia de ideas del equipo.</figcaption></figure>
-          <figure class="figura-placeholder"><div class="placeholder">A completar: foto de los Crazy 8s.</div><figcaption>Fig: Crazy 8s sobre la pantalla principal.</figcaption></figure>
+        <p class="intro">A partir de la pregunta «¿Cómo podríamos tener toda la información organizada y actualizada sobre los lugares y comercios?», el equipo generó alternativas, priorizó tres y las llevó a Crazy 8s.</p>
+
+        <h3>Paso 1 · Lluvia de ideas</h3>
+        <ul class="lista">
+          <li>Las personas y encargados de los comercios pueden actualizar la información desde una pantalla.</li>
+          <li>Los usuarios crean un perfil con sus intereses.</li>
+          <li>Tener filtros y categorías dependiendo del interés.</li>
+          <li>Los usuarios pueden valorar los comercios.</li>
+          <li>Los usuarios pueden contactar con los comercios.</li>
+        </ul>
+        <p class="nota-corta">No hay foto del encuentro: se conserva el listado escrito que surgió de la sesión.</p>
+
+        <h3>Ideas priorizadas</h3>
+        <div class="tabla-scroll">
+          <table>
+            <caption>De la lluvia de ideas se seleccionaron tres ideas según la historia de usuario o el requisito que atendían.</caption>
+            <thead><tr><th scope="col">Idea priorizada</th><th scope="col">Historia o requisito que atiende</th><th scope="col">Por qué la eligieron</th></tr></thead>
+            <tbody>
+              <tr><td>Registro colaborativo de lugares, reseñas y usuarios.</td><td>«Quiero poder dejar una valoración al lugar…»</td><td>Las opiniones ayudan a decidir a la hora de ir a un lugar.</td></tr>
+              <tr><td>El usuario elige qué quiere hacer y la app le recomienda lugares.</td><td>«Quiero recibir recomendaciones basadas en mí…»</td><td>El usuario no pierde tiempo buscando: recibe directamente las mejores opciones.</td></tr>
+              <tr><td>El usuario elige su prioridad (dinero, tiempo, horario) y se recomienda lo mejor.</td><td>«Quiero ver resultados según factores de mi interés…»</td><td>Evita perder tiempo y dinero yendo al lugar que más conviene.</td></tr>
+            </tbody>
+          </table>
         </div>
-        <div class="tarjeta">
-          <h3>Criterio de selección</h3>
-          <p>A completar: qué ideas se descartaron y por qué la elegida responde mejor a los hallazgos de precios opacos y comparación.</p>
+
+        <h3>Paso 2 y 3 · Crazy 8s y curación</h3>
+        <p>Cada integrante realizó su propia hoja de ocho variantes en ocho minutos. De las hojas se tomaron dos recuadros para curarlos con los seis principios de diseño.</p>
+        <div class="galeria">
+          <figure><img src="img/crazy8/crazy8_heber.png" alt="Hoja de Crazy 8s de Heber Aranda con ocho variantes de pantalla."><figcaption>Fig: hoja de Crazy 8s de Heber Aranda.</figcaption></figure>
+          <figure><img src="img/crazy8/crazy8_matias.png" alt="Hoja de Crazy 8s de Matías Mareco con ocho variantes de pantalla."><figcaption>Fig: hoja de Crazy 8s de Matías Mareco.</figcaption></figure>
         </div>
+        <div class="tabla-scroll">
+          <table>
+            <caption>Curación de los bocetos seleccionados con los seis principios de diseño.</caption>
+            <thead><tr><th scope="col">Principio</th><th scope="col">Sección «Explorar»</th><th scope="col">Sección «Inicio»</th></tr></thead>
+            <tbody>
+              <tr><td>Manipulación directa</td><td>La lista vertical sugiere deslizar el dedo hacia arriba y hacia abajo.</td><td>Invita a deslizar horizontalmente el carrusel y verticalmente entre categorías.</td></tr>
+              <tr><td>Affordance</td><td>Las tarjetas delimitadas sugieren que se pueden tocar.</td><td>Un recuadro asomando en el borde derecho invita a arrastrarlo.</td></tr>
+              <tr><td>Retroalimentación</td><td>Falta definir qué ocurre al tocar una tarjeta.</td><td>Falta definir el efecto al llegar al último lugar de la fila.</td></tr>
+              <tr><td>Restricciones</td><td>La descripción se limita a dos líneas con «...».</td><td>Mostrar como máximo los 5 mejores por categoría con botón «Ver más».</td></tr>
+              <tr><td>Significado</td><td>El título «Explorar» y las fotos indican de qué trata cada tarjeta.</td><td>Títulos como «Para salir con amigos» indican qué información se encontrará.</td></tr>
+              <tr><td>Mapeo</td><td>Deslizar hacia arriba revela más lugares abajo.</td><td>Mover el dedo de derecha a izquierda desplaza la lista en la misma dirección.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Paso 4 · Dirección elegida</h3>
+        <p>Se eligieron los bocetos de las pantallas «Inicio» y «Explorar». Esta dirección responde directamente a la historia «quiero recibir recomendaciones basadas en mí…» y cumple mejor el principio de affordance: las tarjetas invitan claramente a ser tocadas para ver más detalles.</p>
       </div>
     </section>
 
@@ -211,21 +250,62 @@
       <div class="contenedor">
         <p class="etiqueta">4 · Prototipar</p>
         <h2>Evolución del prototipo</h2>
-        <p class="intro">Papel → wireframes → alta fidelidad, tarea por tarea. En cada fila se explica qué cambió respecto de la etapa anterior y por qué.</p>
-        <div class="tabla-scroll">
-          <table>
-            <thead><tr><th scope="col">Tarea</th><th scope="col">Papel</th><th scope="col">Wireframe</th><th scope="col">Alta fidelidad</th><th scope="col">Cambio y motivo</th></tr></thead>
-            <tbody>
-              <tr><td>Encontrar un lugar con precio y horario</td><td>A completar</td><td>A completar</td><td>A completar</td><td>A completar</td></tr>
-              <tr><td>Comparar opciones y elegir</td><td>A completar</td><td>A completar</td><td>A completar</td><td>A completar</td></tr>
-              <tr><td>Reportar un dato desactualizado o dejar una reseña</td><td>A completar</td><td>A completar</td><td>A completar</td><td>A completar</td></tr>
-            </tbody>
-          </table>
+        <p class="intro">Papel → wireframes → alta fidelidad. El prototipo en papel mostró dos pantallas: «Inicio», con recomendaciones y rankings, y «Explorar», con mapa y categorías; el botón «Explorar» llevaba a la segunda pantalla.</p>
+
+        <h3>Etapa 1 · Prototipo en papel</h3>
+        <div class="galeria galeria-cuatro">
+          <figure><img src="img/papel/papel_1.png" alt="Boceto en papel 1 del prototipo con las pantallas Inicio y Explorar."><figcaption>Fig: boceto en papel 1.</figcaption></figure>
+          <figure><img src="img/papel/papel_2.png" alt="Boceto en papel 2 del prototipo con las pantallas Inicio y Explorar."><figcaption>Fig: boceto en papel 2.</figcaption></figure>
+          <figure><img src="img/papel/papel_3.png" alt="Boceto en papel 3 del prototipo con las pantallas Inicio y Explorar."><figcaption>Fig: boceto en papel 3.</figcaption></figure>
+          <figure><img src="img/papel/papel_4.png" alt="Boceto en papel 4 del prototipo con las pantallas Inicio y Explorar."><figcaption>Fig: boceto en papel 4.</figcaption></figure>
         </div>
+        <p class="nota-corta">Las cuatro fotos corresponden al prototipo en papel y no tienen un orden asignado.</p>
+
+        <h3>Etapa 2 · Wireframes</h3>
+        <p class="nota-corta">Los wireframes incluidos corresponden a las versiones revisadas (archivos «Después»).</p>
+        <div class="galeria">
+          <figure><img src="img/wireframes/wf_buscardor_simple.png" alt="Wireframe del buscador simple de lugares."><figcaption>Fig: buscador simple de lugares.</figcaption></figure>
+          <figure><img src="img/wireframes/wf_lugares_recientes.png" alt="Wireframe de lugares y búsquedas recientes."><figcaption>Fig: lugares y búsquedas recientes.</figcaption></figure>
+          <figure><img src="img/wireframes/wf_buscar_palabra_clave.png" alt="Wireframe de búsqueda por palabra clave."><figcaption>Fig: búsqueda por palabra clave.</figcaption></figure>
+          <figure><img src="img/wireframes/wf_detalle_gomeria_aranda.png" alt="Wireframe de la ficha de Gomería Aranda."><figcaption>Fig: ficha de Gomería Aranda con contenido realista.</figcaption></figure>
+          <figure><img src="img/wireframes/wf_fruteria_info.png" alt="Wireframe de información de Frutería A."><figcaption>Fig: información de Frutería A.</figcaption></figure>
+          <figure><img src="img/wireframes/wf_escribir_resena.png" alt="Wireframe del formulario para escribir una reseña."><figcaption>Fig: escribir reseña.</figcaption></figure>
+        </div>
+
+        <h3>Etapa 3 · Alta fidelidad</h3>
+        <div class="galeria">
+          <figure><img src="img/alta_fidelidad/alta_01_inicio.png" alt="Pantalla de Inicio en alta fidelidad con recomendaciones de lugares."><figcaption>Fig: Inicio.</figcaption></figure>
+          <figure><img src="img/alta_fidelidad/alta_02_explorar.png" alt="Pantalla de Explorar en alta fidelidad con búsquedas recientes."><figcaption>Fig: Explorar y búsquedas recientes.</figcaption></figure>
+          <figure><img src="img/alta_fidelidad/alta_03_resultados.png" alt="Pantalla de resultados por producto o servicio en alta fidelidad."><figcaption>Fig: resultados por producto o servicio.</figcaption></figure>
+          <figure><img src="img/alta_fidelidad/alta_05_ficha.png" alt="Ficha del lugar en alta fidelidad con precio, horario y contacto."><figcaption>Fig: ficha del lugar.</figcaption></figure>
+          <figure><img src="img/alta_fidelidad/alta_07_escribir_resena.png" alt="Formulario de reseña en alta fidelidad."><figcaption>Fig: escribir reseña.</figcaption></figure>
+          <figure><img src="img/alta_fidelidad/alta_11_anadir_datos.png" alt="Primer paso del alta de sitio en alta fidelidad."><figcaption>Fig: añadir sitio — datos.</figcaption></figure>
+        </div>
+
+        <h3>Tarea por tarea: qué cambió y por qué</h3>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <h4>1. Encontrar un lugar con precio y horario</h4>
+            <p><strong>Papel → wireframe:</strong> las dos pantallas del boceto se digitalizaron en Inicio y Explorar, con búsquedas recientes y resultados por producto o servicio. El cambio responde a la necesidad de comparar opciones sin depender del primer resultado.</p>
+            <p><strong>Wireframe → alta fidelidad:</strong> se aplicó la paleta Azul océano, se agregaron imágenes y contenido realista y se completó la ficha con precio, horario, ubicación y contacto.</p>
+          </article>
+          <article class="tarjeta">
+            <h4>2. Comparar opciones y elegir</h4>
+            <p><strong>Papel → wireframe:</strong> la recomendación por categorías pasó a una lista de tarjetas con datos de lugares reales (Gomería Aranda, Frutería A), para poder comparar sin entrar al mapa.</p>
+            <p><strong>Wireframe → alta fidelidad:</strong> las tarjetas tomaron el estilo del sistema de diseño y los resultados muestran precio y distancia como datos principales.</p>
+          </article>
+          <article class="tarjeta">
+            <h4>3. Dejar una reseña o reportar un dato desactualizado</h4>
+            <p><strong>Papel → wireframe:</strong> se incorporó un formulario de reseña y una pantalla de publicación, y el alta de sitio pasó a tener pasos diferenciados.</p>
+            <p><strong>Wireframe → alta fidelidad:</strong> el flujo se completó con confirmación, vista previa y estado «sitio enviado a revisión», para que el usuario sepa qué pasó y cómo seguir.</p>
+          </article>
+        </div>
+
         <h3>Sistema de diseño</h3>
         <div class="rejilla">
           <article class="tarjeta">
             <h4>Paleta del prototipo</h4>
+            <figure><img src="img/alta_fidelidad/paleta_propuesta_d.png" alt="Propuesta de paleta Azul océano con tonos claros, medios y oscuros."><figcaption>Fig: propuesta D — Azul océano, paleta reducida.</figcaption></figure>
             <div class="muestras">
               <span class="muestra muestra-claro"><code>#CAF0F8</code></span>
               <span class="muestra muestra-primario"><code>#0077B6</code></span>
@@ -234,10 +314,9 @@
             </div>
           </article>
           <article class="tarjeta">
-            <h4>Tipografía</h4>
+            <h4>Tipografía y componentes</h4>
             <p><strong>Títulos:</strong> Playfair Display.<br><strong>Cuerpo:</strong> Inter / sans del sistema.</p>
-            <h4 class="sub">Componentes</h4>
-            <p>Botones, tarjetas de comercio, filtros y estados de carga, confirmación y error. A completar con las capturas del prototipo.</p>
+            <p>Botones, tarjetas de comercio, filtros, ícono de búsqueda y estados de carga, confirmación y error.</p>
           </article>
         </div>
       </div>
@@ -249,7 +328,17 @@
         <h2>Evaluaciones y plan de prueba</h2>
 
         <h3>Evaluaciones ya realizadas</h3>
-        <p>A completar con los resultados del recorrido cognitivo, la evaluación heurística del prototipo en papel y la prueba de usabilidad con wireframes.</p>
+        <p>A completar con los resultados del recorrido cognitivo y la prueba de usabilidad con wireframes. Sí se cuenta con la revisión del prototipo en papel hecha por otro equipo:</p>
+        <div class="tabla-scroll">
+          <table>
+            <caption>Dudas y puntos de fricción observados por el equipo que revisó el prototipo en papel.</caption>
+            <thead><tr><th scope="col">#</th><th scope="col">Duda o punto de fricción</th><th scope="col">Severidad</th><th scope="col">Cambio</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>No entiende para qué son los recuadros que están al lado de los nombres de los negocios.</td><td>A completar</td><td>A completar</td></tr>
+              <tr><td>2</td><td>No tiene una forma de listar por categorías sin ver el mapa.</td><td>A completar</td><td>A completar</td></tr>
+            </tbody>
+          </table>
+        </div>
         <div class="tabla-scroll">
           <table>
             <thead><tr><th scope="col">Problema</th><th scope="col">Evidencia</th><th scope="col">Severidad</th><th scope="col">Cambio</th></tr></thead>

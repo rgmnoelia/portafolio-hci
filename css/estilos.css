@@ -104,6 +104,52 @@ p {
   margin: 0 0 1rem;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.galeria figure {
+  margin: 0;
+}
+
+.galeria img {
+  width: 100%;
+  border: 1px solid var(--borde);
+}
+
+.galeria figcaption {
+  margin-top: 0.6rem;
+  color: #53616c;
+  font-size: 0.85rem;
+}
+
+.galeria-cuatro {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.tarjeta figure {
+  margin: 1rem 0;
+}
+
+.tarjeta figure img {
+  width: 100%;
+}
+
+.nota-corta {
+  color: #53616c;
+  font-size: 0.9rem;
+}
+
 .intro {
   max-width: 52rem;
   font-size: 1.1rem;
