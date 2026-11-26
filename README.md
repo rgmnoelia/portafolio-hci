@@ -21,6 +21,4 @@ Portafolio del proyecto de Interacción Hombre-Máquina — entrega parcial.
 - `anexos/`: materiales de trabajo (entrega 1, guía de entrevista, encuesta, ZIP originales de wireframes y alta fidelidad).
 - `demo/`: demo funcional (entrega final).
 
-## Publicación
 
-GitHub Pages: Settings → Pages → Build and deployment → Source: “Deploy from a branch” → Branch: `main` → `/(root)` → Save.
