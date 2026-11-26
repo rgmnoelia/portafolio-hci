@@ -5,76 +5,290 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portafolio del proyecto de HCI — Entrega parcial</title>
   <meta name="description" content="Portafolio del proyecto de Interacción Hombre-Máquina: investigación, definición, ideación, prototipado y evaluaciones.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
-  <header class="cabecera">
-    <h1>[Nombre del producto]</h1>
-    <p class="bajada">Portafolio del proyecto de Interacción Hombre-Máquina — entrega parcial.</p>
-    <p><strong>Integrantes:</strong> Heber Aranda, Matías Mareco, Noelia Rotela.</p>
+  <header class="barra">
+    <div class="contenedor barra-inner">
+      <a class="marca" href="#portada">Portafolio · HCI</a>
+      <nav aria-label="Navegación del portafolio">
+        <ul class="menu">
+          <li><a href="#investigacion">Investigación</a></li>
+          <li><a href="#definicion">Definición</a></li>
+          <li><a href="#ideacion">Ideación</a></li>
+          <li><a href="#prototipo">Prototipo</a></li>
+          <li><a href="#evaluacion">Evaluación</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <nav aria-label="Índice del portafolio">
-    <h2 class="visually-hidden">Índice del portafolio</h2>
-    <ol class="indice">
-      <li><a href="#portada">1. Portada</a></li>
-      <li><a href="#investigacion">2. Investigación (Empatizar)</a></li>
-      <li><a href="#definicion">3. Definición del problema (Definir)</a></li>
-      <li><a href="#ideacion">4. Ideación (Idear)</a></li>
-      <li><a href="#prototipo">5. Evolución del prototipo (Prototipar)</a></li>
-      <li><a href="#evaluacion">6. Evaluaciones y plan de prueba (Evaluar)</a></li>
-    </ol>
-  </nav>
-
   <main id="contenido">
-    <section id="portada">
-      <h2>1. Portada</h2>
-      <p class="pendiente">A completar: problema en una oración, para quién es y captura de la versión de alta fidelidad (en la parcial).</p>
+
+    <section class="hero" id="portada">
+      <div class="contenedor">
+        <p class="etiqueta">Overview · Entrega parcial</p>
+        <h1>[Nombre del producto]</h1>
+        <p class="bajada">Información clara, actualizada y centralizada sobre comercios y servicios de Encarnación, para que decidir dónde ir no dependa del primero que aparece.</p>
+        <dl class="meta">
+          <div><dt>Integrantes</dt><dd>Heber Aranda · Matías Mareco · Noelia Rotela</dd></div>
+          <div><dt>Rol</dt><dd>Investigación, definición, ideación y prototipado</dd></div>
+          <div><dt>Fecha</dt><dd>26 de noviembre de 2026</dd></div>
+        </dl>
+        <figure class="figura-placeholder">
+          <div class="placeholder">A completar: captura de la versión de alta fidelidad.</div>
+          <figcaption>Fig: vista principal del producto.</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <section id="investigacion">
-      <h2>2. Investigación (Empatizar)</h2>
-      <p class="pendiente">A completar: métodos, participantes, hallazgos con evidencia, mapa de empatía, insights y uso de IA.</p>
-      <h3>Métodos utilizados</h3>
-      <p class="pendiente">A completar.</p>
-      <h3>Hallazgos principales</h3>
-      <p class="pendiente">A completar.</p>
-      <h3>Insights</h3>
-      <p class="pendiente">A completar.</p>
+    <section class="seccion" id="investigacion">
+      <div class="contenedor">
+        <p class="etiqueta">1 · Empatizar</p>
+        <h2>Investigación</h2>
+        <p class="intro">Antes de proponer una solución necesitábamos confirmar si la dispersión y desactualización de la información sobre comercios locales era un problema real y no una suposición del equipo.</p>
+
+        <h3>Métodos utilizados</h3>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <h4>Encuesta mixta</h4>
+            <p><strong>42 personas</strong> · Google Forms. Preguntas categóricas y dos escalas del 1 al 5 (facilidad y frustración).</p>
+          </article>
+          <article class="tarjeta">
+            <h4>Entrevistas semiestructuradas</h4>
+            <p><strong>4 entrevistas</strong> en profundidad con una guía que iba del comportamiento habitual a situaciones concretas de pérdida de tiempo o dinero.</p>
+          </article>
+          <article class="tarjeta">
+            <h4>Análisis con IA</h4>
+            <p>Se generaron etiquetas, citas textuales y niveles de confianza; luego se agruparon en un mapa de afinidad y se verificaron en tres pasos.</p>
+          </article>
+        </div>
+
+        <h3>Lo que encontramos</h3>
+        <div class="datos">
+          <div class="dato"><strong>90%</strong><span>38 de 42 perdieron tiempo por no encontrar información clara.</span></div>
+          <div class="dato"><strong>97%</strong><span>41 de 42 eligió el primer comercio que encontró.</span></div>
+          <div class="dato"><strong>76%</strong><span>32 de 42 no sabía que existía un sitio oficial con información de la ciudad.</span></div>
+        </div>
+
+        <ul class="hallazgos">
+          <li><strong>Precio opaco:</strong> 4 de 4 entrevistados mencionaron precios inconsistentes u ocultos; el 90% lo señala como el dato que más necesita.</li>
+          <li><strong>Dependencia de terceros:</strong> 3 de 4 preguntan a conocidos para conseguir información confiable, y quieren dejar de hacerlo.</li>
+          <li><strong>Consecuencia económica:</strong> el 71% (30 de 42) gastó más de lo esperado; los 4 entrevistados se enteraron después de que existía una mejor opción.</li>
+          <li><strong>El recién llegado:</strong> los 4 coinciden en que alguien nuevo en Encarnación tendría dificultades, aunque por razones distintas.</li>
+        </ul>
+
+        <figure class="cita">
+          <blockquote>«No sabía dónde preguntar ni por qué medio.»</blockquote>
+          <figcaption>Entrevista 1</figcaption>
+        </figure>
+        <figure class="cita cita-claro">
+          <blockquote>«Compré en el primer lugar que encontré por si no había otros lugares o estaba más caro.»</blockquote>
+          <figcaption>Entrevista 4</figcaption>
+        </figure>
+
+        <h3>Mapa de empatía</h3>
+        <figure>
+          <div class="rejilla rejilla-empatia">
+            <article class="tarjeta"><h4>Dice</h4><p>«Los precios que me contaron no coincidían.» «La información en Google está bastante desactualizada.» «Poder tener disponible todo en un lugar.»</p></article>
+            <article class="tarjeta"><h4>Piensa</h4><p>Sospecha que puede estar pagando de más; cree que hay mejores opciones que no encontró a tiempo; duda de que redes y Maps estén al día.</p></article>
+            <article class="tarjeta"><h4>Hace</h4><p>Busca en Maps o Instagram, pregunta a conocidos, recorre la ciudad cuando la búsqueda online no alcanza y compara si tiene tiempo.</p></article>
+            <article class="tarjeta"><h4>Siente</h4><p>Frustración ante un precio inesperado, desconfianza, resignación al depender de otros y arrepentimiento al descubrir después una mejor opción.</p></article>
+          </div>
+          <figcaption>Fig: mapa de empatía construido a partir de las cuatro entrevistas.</figcaption>
+        </figure>
+
+        <h3>Insights</h3>
+        <ol class="insights">
+          <li><strong>Dependemos de terceros para decidir.</strong> La información confiable circula por conocimiento informal, no por una fuente visible.</li>
+          <li><strong>El precio es el dato más buscado y el más opaco.</strong> Es la principal dificultad y, a la vez, lo que más impulsa la comparación.</li>
+          <li><strong>La fuente oficial es invisible.</strong> Casi nadie sabe que existe y nadie la mencionó espontáneamente.</li>
+        </ol>
+
+        <details class="nota">
+          <summary>Cómo usamos IA en el análisis</summary>
+          <p>Le pedimos una etiqueta corta por mención relevante, la cita textual exacta y un nivel de confianza. Después le pedimos agrupar las etiquetas en un mapa de afinidad, marcar contradicciones y señalar como «evidencia limitada» los temas sostenidos por menos de tres de los cuatro participantes. La verificación humana revisó que las citas fueran textuales, que las etiquetas fueran inferencias razonables y que los temas coincidieran con el mapa armado manualmente por el equipo.</p>
+        </details>
+      </div>
     </section>
 
-    <section id="definicion">
-      <h2>3. Definición del problema (Definir)</h2>
-      <p class="pendiente">A completar: persona, mapa de viaje, insight, POV, preguntas «¿Cómo podríamos...?», historias de usuario y requisitos trazables a los hallazgos.</p>
-      <h3>Trazabilidad hallazgo → requisito</h3>
-      <p class="pendiente">A completar.</p>
+    <section class="seccion seccion-clara" id="definicion">
+      <div class="contenedor">
+        <p class="etiqueta">2 · Definir</p>
+        <h2>Definición del problema</h2>
+
+        <figure class="cita">
+          <blockquote>«Los usuarios pierden tiempo al no encontrar información sobre lugares de interés.»</blockquote>
+          <figcaption>Insight · evidencia: «No sabía dónde preguntar ni por qué medio» y «compré en el primer lugar que encontré…».</figcaption>
+        </figure>
+
+        <div class="rejilla">
+          <article class="tarjeta"><h4>Punto de vista</h4><p>Los usuarios necesitan encontrar información actualizada y reunida en un solo lugar sobre los lugares y comercios, porque pueden perder tiempo y dinero si van al primero que encuentran sin tener otras opciones.</p></article>
+          <article class="tarjeta"><h4>¿Cómo podríamos...?</h4><p>¿Cómo podríamos tener toda la información organizada y actualizada sobre los lugares y comercios?</p></article>
+        </div>
+
+        <h3>Persona y mapa de viaje</h3>
+        <figure class="figura-placeholder">
+          <div class="placeholder">A completar: imagen de la persona y del mapa de viaje (disponibles en el PDF de la entrega 1).</div>
+          <figcaption>Fig: el punto de fricción del recorrido ocurre en la etapa «Durante»: las fuentes consultadas no muestran la misma información ni con el mismo formato.</figcaption>
+        </figure>
+
+        <h3>Historias de usuario</h3>
+        <ul class="lista">
+          <li>Como usuario, quiero información actualizada sobre los lugares de interés, para revisar opciones y comparar cuál me conviene.</li>
+          <li>Como usuario, quiero ver resultados según precio, distancia y horarios, para encontrar exactamente lo que necesito.</li>
+          <li>Como usuario, quiero recibir recomendaciones basadas en mí, para conocer lugares nuevos sin buscar.</li>
+          <li>Como usuario, quiero ver y dejar comentarios, para dar y recibir feedback de quienes ya visitaron el lugar.</li>
+          <li>Como usuario, quiero alertar sobre información falsa o desactualizada, para advertir a otros usuarios y a quienes organizan la plataforma.</li>
+          <li>Como usuario, quiero dejar una valoración al lugar, para mostrar mi apoyo o disconformidad.</li>
+          <li>Como usuario, quiero acceder a un medio de contacto, para consultar o reservar.</li>
+        </ul>
+
+        <h3>Requisitos</h3>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <h4>Funcionales</h4>
+            <ul class="lista corta">
+              <li>Recibir actualizaciones de usuarios y del personal de los comercios.</li>
+              <li>Mostrar los lugares mejor valorados según lo que busca el usuario.</li>
+              <li>Mostrar la ubicación exacta, imágenes y descripciones.</li>
+              <li>Proveer medios de contacto con los lugares exhibidos.</li>
+            </ul>
+          </article>
+          <article class="tarjeta">
+            <h4>No funcionales</h4>
+            <ul class="lista corta">
+              <li>Datos reales y actualizados.</li>
+              <li>Funcionar en celular y computadora.</li>
+              <li>Sistema de autenticación.</li>
+              <li>Historial de lugares consultados.</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3>Trazabilidad: del hallazgo al requisito</h3>
+        <div class="tabla-scroll">
+          <table>
+            <caption>Cada decisión se apoya en un dato concreto de la investigación.</caption>
+            <thead><tr><th scope="col">Hallazgo</th><th scope="col">Decisión / requisito</th></tr></thead>
+            <tbody>
+              <tr><td>90% perdió tiempo por información poco clara</td><td>Centralizar la información en una sola fuente con datos visibles de entrada.</td></tr>
+              <tr><td>97% eligió el primero que encontró</td><td>Mostrar alternativas y permitir comparar antes de elegir.</td></tr>
+              <tr><td>90% necesita precios; 4/4 los encontró ocultos</td><td>Mostrar precios como dato principal en la ficha del lugar.</td></tr>
+              <tr><td>76% no conocía el sitio oficial</td><td>Hacer visible el origen y el estado de actualización de los datos.</td></tr>
+              <tr><td>71% gastó más de lo esperado</td><td>Comparación por precio/calidad y contacto para consultar antes de ir.</td></tr>
+              <tr><td>3/4 dependen de conocidos</td><td>Comentarios, valoraciones y reporte de información desactualizada.</td></tr>
+              <tr><td>4/4 coinciden sobre el recién llegado</td><td>Búsqueda por necesidades con filtros de precio, distancia y horario.</td></tr>
+              <tr><td>Uso desde la calle</td><td>Diseño responsive y autenticación para quien actualiza datos.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
 
-    <section id="ideacion">
-      <h2>4. Ideación (Idear)</h2>
-      <p class="pendiente">A completar: fotos de la lluvia de ideas y los Crazy 8s, alternativas consideradas y criterio de selección.</p>
+    <section class="seccion" id="ideacion">
+      <div class="contenedor">
+        <p class="etiqueta">3 · Idear</p>
+        <h2>Ideación</h2>
+        <p class="intro">A completar con las imágenes de la lluvia de ideas y los Crazy 8s, las alternativas consideradas y el criterio por el que elegimos la que desarrollamos.</p>
+        <div class="rejilla">
+          <figure class="figura-placeholder"><div class="placeholder">A completar: foto de la lluvia de ideas.</div><figcaption>Fig: lluvia de ideas del equipo.</figcaption></figure>
+          <figure class="figura-placeholder"><div class="placeholder">A completar: foto de los Crazy 8s.</div><figcaption>Fig: Crazy 8s sobre la pantalla principal.</figcaption></figure>
+        </div>
+        <div class="tarjeta">
+          <h3>Criterio de selección</h3>
+          <p>A completar: qué ideas se descartaron y por qué la elegida responde mejor a los hallazgos de precios opacos y comparación.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="prototipo">
-      <h2>5. Evolución del prototipo (Prototipar)</h2>
-      <p class="pendiente">A completar: papel → wireframes → alta fidelidad, tarea por tarea, con los cambios justificados y el sistema de diseño.</p>
-      <h3>Sistema de diseño</h3>
-      <p class="pendiente">A completar: colores, tipografía y componentes.</p>
+    <section class="seccion seccion-clara" id="prototipo">
+      <div class="contenedor">
+        <p class="etiqueta">4 · Prototipar</p>
+        <h2>Evolución del prototipo</h2>
+        <p class="intro">Papel → wireframes → alta fidelidad, tarea por tarea. En cada fila se explica qué cambió respecto de la etapa anterior y por qué.</p>
+        <div class="tabla-scroll">
+          <table>
+            <thead><tr><th scope="col">Tarea</th><th scope="col">Papel</th><th scope="col">Wireframe</th><th scope="col">Alta fidelidad</th><th scope="col">Cambio y motivo</th></tr></thead>
+            <tbody>
+              <tr><td>Encontrar un lugar con precio y horario</td><td>A completar</td><td>A completar</td><td>A completar</td><td>A completar</td></tr>
+              <tr><td>Comparar opciones y elegir</td><td>A completar</td><td>A completar</td><td>A completar</td><td>A completar</td></tr>
+              <tr><td>Reportar un dato desactualizado o dejar una reseña</td><td>A completar</td><td>A completar</td><td>A completar</td><td>A completar</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Sistema de diseño</h3>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <h4>Paleta del prototipo</h4>
+            <div class="muestras">
+              <span class="muestra muestra-claro"><code>#CAF0F8</code></span>
+              <span class="muestra muestra-primario"><code>#0077B6</code></span>
+              <span class="muestra muestra-oscuro"><code>#023E8A</code></span>
+              <span class="muestra muestra-blanco"><code>#FFFFFF</code></span>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <h4>Tipografía</h4>
+            <p><strong>Títulos:</strong> Playfair Display.<br><strong>Cuerpo:</strong> Inter / sans del sistema.</p>
+            <h4 class="sub">Componentes</h4>
+            <p>Botones, tarjetas de comercio, filtros y estados de carga, confirmación y error. A completar con las capturas del prototipo.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="evaluacion">
-      <h2>6. Evaluaciones realizadas y plan de prueba (Evaluar)</h2>
-      <h3>Evaluaciones ya realizadas</h3>
-      <p class="pendiente">A completar: recorrido cognitivo, evaluación heurística y prueba con wireframes; problemas, severidad y cambios.</p>
-      <h3>Plan de la prueba de usabilidad con la demo</h3>
-      <p class="pendiente">A completar: objetivo, perfil de participantes, reclutamiento, tareas como escenarios y métricas.</p>
+    <section class="seccion" id="evaluacion">
+      <div class="contenedor">
+        <p class="etiqueta">5 · Evaluar</p>
+        <h2>Evaluaciones y plan de prueba</h2>
+
+        <h3>Evaluaciones ya realizadas</h3>
+        <p>A completar con los resultados del recorrido cognitivo, la evaluación heurística del prototipo en papel y la prueba de usabilidad con wireframes.</p>
+        <div class="tabla-scroll">
+          <table>
+            <thead><tr><th scope="col">Problema</th><th scope="col">Evidencia</th><th scope="col">Severidad</th><th scope="col">Cambio</th></tr></thead>
+            <tbody>
+              <tr><td>A completar</td><td>A completar</td><td><span class="severidad s1">1 · Cosmético</span></td><td>A completar</td></tr>
+              <tr><td>A completar</td><td>A completar</td><td><span class="severidad s2">2 · Menor</span></td><td>A completar</td></tr>
+              <tr><td>A completar</td><td>A completar</td><td><span class="severidad s3">3 · Mayor</span></td><td>A completar</td></tr>
+              <tr><td>A completar</td><td>A completar</td><td><span class="severidad s4">4 · Bloqueante</span></td><td>A completar</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="bloque-oscuro">
+          <p class="etiqueta etiqueta-clara">Plan de la prueba con la demo · Entrega final</p>
+          <h3>Objetivo</h3>
+          <p>Verificar si una persona del perfil logra encontrar, comparar y elegir un comercio en la demo sin asistencia, y si confía en la información mostrada.</p>
+          <div class="rejilla rejilla-oscura">
+            <article><h4>Participantes</h4><p>Al menos 5 jóvenes que vivan o visiten Encarnación con frecuencia. Se excluyen compañeros del curso y personas que participaron en pruebas anteriores. Sin nombres en el portafolio.</p></article>
+            <article><h4>Reclutamiento</h4><p>A completar: contactos personales, grupos de estudiantes de la UNI y difusión en redes.</p></article>
+            <article><h4>Protocolo</h4><p>Pensamiento en voz alta, un facilitador y un observador, consentimiento informado y grabación solo con autorización.</p></article>
+            <article><h4>Métricas</h4><p>Por tarea: completitud, tiempo, errores y SEQ (1–7). Al final: SUS.</p></article>
+          </div>
+          <h4 class="sub">Tareas planteadas como escenarios</h4>
+          <ol class="lista">
+            <li>Tenés ganas de comer algo en Encarnación pero no sabés dónde. Buscá un lugar que sirva lo que se te antoja y que tenga precio y horario claro, y decidí si irías.</li>
+            <li>Tenés dos lugares en mente y un presupuesto limitado. Encontrá la información necesaria para decidir cuál te conviene y explicá por qué.</li>
+            <li>Descubriste que el precio que figura no coincide con el real. Contá qué harías para que a otro no le pase lo mismo.</li>
+          </ol>
+          <p class="pie-oscuro">En la entrega final se unificarán los problemas, se contarán los participantes afectados y se corregirán los de severidad 3 y 4, mostrando antes y después.</p>
+        </div>
+      </div>
     </section>
+
   </main>
 
   <footer>
-    <p>Entrega parcial — 26 de noviembre de 2026. La entrega final (14 de diciembre de 2026) agregará la demo funcional, la prueba con usuarios y la reflexión.</p>
+    <div class="contenedor">
+      <p>Entrega parcial — 26 de noviembre de 2026. La entrega final (14 de diciembre de 2026) agregará la demo funcional, la prueba con usuarios y la reflexión.</p>
+    </div>
   </footer>
 </body>
 </html>
